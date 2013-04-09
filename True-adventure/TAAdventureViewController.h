@@ -10,4 +10,6 @@
 
 @interface TAAdventureViewController : UIViewController
 
+- (IBAction)btnClick:(UIButton *)sender;
+
 @end

@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TAHomeViewController : UIViewController
+@interface TAHomeViewController : UIViewController <UITabBarControllerDelegate>
+
+@property (nonatomic, retain) UITabBarController *tabBarController;
 
 @end

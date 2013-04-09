@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6213609617144F7F00F5E476 /* TAHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6213609417144F7F00F5E476 /* TAHomeViewController.m */; };
+		6213609F1714565C00F5E476 /* TATrueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6213609D1714565C00F5E476 /* TATrueViewController.m */; };
+		621360A01714565C00F5E476 /* TATrueViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6213609E1714565C00F5E476 /* TATrueViewController.xib */; };
+		621360A41714566B00F5E476 /* TAAdventureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 621360A21714566B00F5E476 /* TAAdventureViewController.m */; };
+		621360A51714566B00F5E476 /* TAAdventureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 621360A31714566B00F5E476 /* TAAdventureViewController.xib */; };
 		6288C3FF1713D18200B5C243 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6288C3FE1713D18200B5C243 /* UIKit.framework */; };
 		6288C4011713D18200B5C243 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6288C4001713D18200B5C243 /* Foundation.framework */; };
 		6288C4031713D18200B5C243 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6288C4021713D18200B5C243 /* CoreGraphics.framework */; };
@@ -21,6 +26,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6213609317144F7F00F5E476 /* TAHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAHomeViewController.h; sourceTree = "<group>"; };
+		6213609417144F7F00F5E476 /* TAHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAHomeViewController.m; sourceTree = "<group>"; };
+		6213609C1714565C00F5E476 /* TATrueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TATrueViewController.h; sourceTree = "<group>"; };
+		6213609D1714565C00F5E476 /* TATrueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TATrueViewController.m; sourceTree = "<group>"; };
+		6213609E1714565C00F5E476 /* TATrueViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TATrueViewController.xib; sourceTree = "<group>"; };
+		621360A11714566B00F5E476 /* TAAdventureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAdventureViewController.h; sourceTree = "<group>"; };
+		621360A21714566B00F5E476 /* TAAdventureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAAdventureViewController.m; sourceTree = "<group>"; };
+		621360A31714566B00F5E476 /* TAAdventureViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TAAdventureViewController.xib; sourceTree = "<group>"; };
 		6288C3FA1713D18100B5C243 /* True-adventure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "True-adventure.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6288C3FE1713D18200B5C243 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		6288C4001713D18200B5C243 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -53,6 +66,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6213609117144F6300F5E476 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				6213609317144F7F00F5E476 /* TAHomeViewController.h */,
+				6213609417144F7F00F5E476 /* TAHomeViewController.m */,
+				6213609C1714565C00F5E476 /* TATrueViewController.h */,
+				6213609D1714565C00F5E476 /* TATrueViewController.m */,
+				6213609E1714565C00F5E476 /* TATrueViewController.xib */,
+				621360A11714566B00F5E476 /* TAAdventureViewController.h */,
+				621360A21714566B00F5E476 /* TAAdventureViewController.m */,
+				621360A31714566B00F5E476 /* TAAdventureViewController.xib */,
+			);
+			name = ui;
+			sourceTree = "<group>";
+		};
 		6288C3EF1713D18100B5C243 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +111,7 @@
 		6288C4041713D18200B5C243 /* True-adventure */ = {
 			isa = PBXGroup;
 			children = (
+				6213609117144F6300F5E476 /* ui */,
 				6288C40D1713D18200B5C243 /* TAAppDelegate.h */,
 				6288C40E1713D18200B5C243 /* TAAppDelegate.m */,
 				6288C4161713D18200B5C243 /* TAViewController.h */,
@@ -164,6 +193,8 @@
 				6288C4131713D18200B5C243 /* Default@2x.png in Resources */,
 				6288C4151713D18200B5C243 /* Default-568h@2x.png in Resources */,
 				6288C41B1713D18200B5C243 /* TAViewController.xib in Resources */,
+				621360A01714565C00F5E476 /* TATrueViewController.xib in Resources */,
+				621360A51714566B00F5E476 /* TAAdventureViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +208,9 @@
 				6288C40B1713D18200B5C243 /* main.m in Sources */,
 				6288C40F1713D18200B5C243 /* TAAppDelegate.m in Sources */,
 				6288C4181713D18200B5C243 /* TAViewController.m in Sources */,
+				6213609617144F7F00F5E476 /* TAHomeViewController.m in Sources */,
+				6213609F1714565C00F5E476 /* TATrueViewController.m in Sources */,
+				621360A41714566B00F5E476 /* TAAdventureViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +325,7 @@
 				6288C4201713D18200B5C243 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

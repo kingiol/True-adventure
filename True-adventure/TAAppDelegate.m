@@ -12,8 +12,11 @@
 
 @implementation TAAppDelegate
 
+@synthesize rootNavigationController = _rootNavigationController;
+
 - (void)dealloc
 {
+    [_rootNavigationController release];
     [_window release];
     [_viewController release];
     [super dealloc];
@@ -24,7 +27,10 @@
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
     self.viewController = [[[TAViewController alloc] initWithNibName:@"TAViewController" bundle:nil] autorelease];
-    self.window.rootViewController = self.viewController;
+    
+    self.rootNavigationController = [[UINavigationController alloc] initWithRootViewController:self.viewController];
+    self.rootNavigationController.navigationBar.hidden = YES;
+    self.window.rootViewController = self.rootNavigationController;
     [self.window makeKeyAndVisible];
     return YES;
 }

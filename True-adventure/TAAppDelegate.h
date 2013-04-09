@@ -16,4 +16,6 @@
 
 @property (strong, nonatomic) TAViewController *viewController;
 
+@property (nonatomic, retain) UINavigationController *rootNavigationController;
+
 @end
