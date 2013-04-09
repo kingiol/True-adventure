@@ -1,0 +1,298 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6288C3FF1713D18200B5C243 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6288C3FE1713D18200B5C243 /* UIKit.framework */; };
+		6288C4011713D18200B5C243 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6288C4001713D18200B5C243 /* Foundation.framework */; };
+		6288C4031713D18200B5C243 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6288C4021713D18200B5C243 /* CoreGraphics.framework */; };
+		6288C4091713D18200B5C243 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6288C4071713D18200B5C243 /* InfoPlist.strings */; };
+		6288C40B1713D18200B5C243 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6288C40A1713D18200B5C243 /* main.m */; };
+		6288C40F1713D18200B5C243 /* TAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6288C40E1713D18200B5C243 /* TAAppDelegate.m */; };
+		6288C4111713D18200B5C243 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 6288C4101713D18200B5C243 /* Default.png */; };
+		6288C4131713D18200B5C243 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6288C4121713D18200B5C243 /* Default@2x.png */; };
+		6288C4151713D18200B5C243 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6288C4141713D18200B5C243 /* Default-568h@2x.png */; };
+		6288C4181713D18200B5C243 /* TAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6288C4171713D18200B5C243 /* TAViewController.m */; };
+		6288C41B1713D18200B5C243 /* TAViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6288C4191713D18200B5C243 /* TAViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6288C3FA1713D18100B5C243 /* True-adventure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "True-adventure.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6288C3FE1713D18200B5C243 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6288C4001713D18200B5C243 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6288C4021713D18200B5C243 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6288C4061713D18200B5C243 /* True-adventure-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "True-adventure-Info.plist"; sourceTree = "<group>"; };
+		6288C4081713D18200B5C243 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6288C40A1713D18200B5C243 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6288C40C1713D18200B5C243 /* True-adventure-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "True-adventure-Prefix.pch"; sourceTree = "<group>"; };
+		6288C40D1713D18200B5C243 /* TAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TAAppDelegate.h; sourceTree = "<group>"; };
+		6288C40E1713D18200B5C243 /* TAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TAAppDelegate.m; sourceTree = "<group>"; };
+		6288C4101713D18200B5C243 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		6288C4121713D18200B5C243 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		6288C4141713D18200B5C243 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		6288C4161713D18200B5C243 /* TAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TAViewController.h; sourceTree = "<group>"; };
+		6288C4171713D18200B5C243 /* TAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TAViewController.m; sourceTree = "<group>"; };
+		6288C41A1713D18200B5C243 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/TAViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6288C3F71713D18100B5C243 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6288C3FF1713D18200B5C243 /* UIKit.framework in Frameworks */,
+				6288C4011713D18200B5C243 /* Foundation.framework in Frameworks */,
+				6288C4031713D18200B5C243 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6288C3EF1713D18100B5C243 = {
+			isa = PBXGroup;
+			children = (
+				6288C4041713D18200B5C243 /* True-adventure */,
+				6288C3FD1713D18200B5C243 /* Frameworks */,
+				6288C3FB1713D18200B5C243 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6288C3FB1713D18200B5C243 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6288C3FA1713D18100B5C243 /* True-adventure.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6288C3FD1713D18200B5C243 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6288C3FE1713D18200B5C243 /* UIKit.framework */,
+				6288C4001713D18200B5C243 /* Foundation.framework */,
+				6288C4021713D18200B5C243 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6288C4041713D18200B5C243 /* True-adventure */ = {
+			isa = PBXGroup;
+			children = (
+				6288C40D1713D18200B5C243 /* TAAppDelegate.h */,
+				6288C40E1713D18200B5C243 /* TAAppDelegate.m */,
+				6288C4161713D18200B5C243 /* TAViewController.h */,
+				6288C4171713D18200B5C243 /* TAViewController.m */,
+				6288C4191713D18200B5C243 /* TAViewController.xib */,
+				6288C4051713D18200B5C243 /* Supporting Files */,
+			);
+			path = "True-adventure";
+			sourceTree = "<group>";
+		};
+		6288C4051713D18200B5C243 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6288C4061713D18200B5C243 /* True-adventure-Info.plist */,
+				6288C4071713D18200B5C243 /* InfoPlist.strings */,
+				6288C40A1713D18200B5C243 /* main.m */,
+				6288C40C1713D18200B5C243 /* True-adventure-Prefix.pch */,
+				6288C4101713D18200B5C243 /* Default.png */,
+				6288C4121713D18200B5C243 /* Default@2x.png */,
+				6288C4141713D18200B5C243 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6288C3F91713D18100B5C243 /* True-adventure */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6288C41E1713D18200B5C243 /* Build configuration list for PBXNativeTarget "True-adventure" */;
+			buildPhases = (
+				6288C3F61713D18100B5C243 /* Sources */,
+				6288C3F71713D18100B5C243 /* Frameworks */,
+				6288C3F81713D18100B5C243 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "True-adventure";
+			productName = "True-adventure";
+			productReference = 6288C3FA1713D18100B5C243 /* True-adventure.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6288C3F11713D18100B5C243 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TA;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = Kingiol;
+			};
+			buildConfigurationList = 6288C3F41713D18100B5C243 /* Build configuration list for PBXProject "True-adventure" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6288C3EF1713D18100B5C243;
+			productRefGroup = 6288C3FB1713D18200B5C243 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6288C3F91713D18100B5C243 /* True-adventure */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6288C3F81713D18100B5C243 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6288C4091713D18200B5C243 /* InfoPlist.strings in Resources */,
+				6288C4111713D18200B5C243 /* Default.png in Resources */,
+				6288C4131713D18200B5C243 /* Default@2x.png in Resources */,
+				6288C4151713D18200B5C243 /* Default-568h@2x.png in Resources */,
+				6288C41B1713D18200B5C243 /* TAViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6288C3F61713D18100B5C243 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6288C40B1713D18200B5C243 /* main.m in Sources */,
+				6288C40F1713D18200B5C243 /* TAAppDelegate.m in Sources */,
+				6288C4181713D18200B5C243 /* TAViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6288C4071713D18200B5C243 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6288C4081713D18200B5C243 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6288C4191713D18200B5C243 /* TAViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6288C41A1713D18200B5C243 /* en */,
+			);
+			name = TAViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6288C41C1713D18200B5C243 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6288C41D1713D18200B5C243 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6288C41F1713D18200B5C243 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "True-adventure/True-adventure-Prefix.pch";
+				INFOPLIST_FILE = "True-adventure/True-adventure-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6288C4201713D18200B5C243 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "True-adventure/True-adventure-Prefix.pch";
+				INFOPLIST_FILE = "True-adventure/True-adventure-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6288C3F41713D18100B5C243 /* Build configuration list for PBXProject "True-adventure" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6288C41C1713D18200B5C243 /* Debug */,
+				6288C41D1713D18200B5C243 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6288C41E1713D18200B5C243 /* Build configuration list for PBXNativeTarget "True-adventure" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6288C41F1713D18200B5C243 /* Debug */,
+				6288C4201713D18200B5C243 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6288C3F11713D18100B5C243 /* Project object */;
+}
