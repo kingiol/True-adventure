@@ -51,7 +51,10 @@
         
         TAHomeViewController *controller = [[TAHomeViewController alloc] init];
         
-        [self.navigationController pushViewController:controller animated:YES];
+//        [self.navigationController pushViewController:controller animated:YES];
+        [self presentViewController:controller animated:YES completion:^{
+            
+        }];
         [self.view removeGestureRecognizer:gestureRecognizer];
     }
 }

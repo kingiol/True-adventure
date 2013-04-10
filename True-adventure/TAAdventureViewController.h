@@ -8,7 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+@class TAAddressBookManager;
+
 @interface TAAdventureViewController : UIViewController
+
+@property (nonatomic, retain) TAAddressBookManager *addressBookManager;
 
 - (IBAction)btnClick:(UIButton *)sender;
 

@@ -11,4 +11,11 @@
 #ifdef __OBJC__
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
+    #import <AddressBook/AddressBook.h>
+    #import <AddressBookUI/AddressBookUI.h>
+
+
+    #import "NSString+TAUtilities.h"
 #endif
+
+#define IOSSystemVersion [[UIDevice currentDevice].systemVersion floatValue]
