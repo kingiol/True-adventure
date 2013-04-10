@@ -11,6 +11,17 @@
 		62100B191715249E0091046D /* TAAddressBookVo.m in Sources */ = {isa = PBXBuildFile; fileRef = 62100B181715249E0091046D /* TAAddressBookVo.m */; };
 		62100B1E1715301F0091046D /* NSString+TAUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 62100B1D1715301F0091046D /* NSString+TAUtilities.m */; };
 		62100B22171551AF0091046D /* TAUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 62100B21171551AF0091046D /* TAUtil.m */; };
+		62100B241715821E0091046D /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62100B231715821E0091046D /* CoreTelephony.framework */; };
+		62100B4717159FDE0091046D /* FMDatabase+InMemoryOnDiskIO.m in Sources */ = {isa = PBXBuildFile; fileRef = 62100B3B17159FDE0091046D /* FMDatabase+InMemoryOnDiskIO.m */; };
+		62100B4817159FDE0091046D /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 62100B3D17159FDE0091046D /* FMDatabase.m */; };
+		62100B4917159FDE0091046D /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 62100B3F17159FDE0091046D /* FMDatabaseAdditions.m */; };
+		62100B4A17159FDE0091046D /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 62100B4117159FDE0091046D /* FMDatabasePool.m */; };
+		62100B4B17159FDE0091046D /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 62100B4317159FDE0091046D /* FMDatabaseQueue.m */; };
+		62100B4C17159FDE0091046D /* fmdb.m in Sources */ = {isa = PBXBuildFile; fileRef = 62100B4417159FDE0091046D /* fmdb.m */; };
+		62100B4D17159FDE0091046D /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 62100B4617159FDE0091046D /* FMResultSet.m */; };
+		62100B4F1715A0AD0091046D /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 62100B4E1715A0AD0091046D /* libsqlite3.dylib */; };
+		62100B521715A4B20091046D /* TACallHistoryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 62100B511715A4B20091046D /* TACallHistoryManager.m */; };
+		62100B551715A91F0091046D /* TACallHistoryVo.m in Sources */ = {isa = PBXBuildFile; fileRef = 62100B541715A91F0091046D /* TACallHistoryVo.m */; };
 		6213609617144F7F00F5E476 /* TAHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6213609417144F7F00F5E476 /* TAHomeViewController.m */; };
 		6213609F1714565C00F5E476 /* TATrueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6213609D1714565C00F5E476 /* TATrueViewController.m */; };
 		621360A01714565C00F5E476 /* TATrueViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6213609E1714565C00F5E476 /* TATrueViewController.xib */; };
@@ -40,6 +51,35 @@
 		62100B1D1715301F0091046D /* NSString+TAUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+TAUtilities.m"; sourceTree = "<group>"; };
 		62100B20171551AF0091046D /* TAUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAUtil.h; sourceTree = "<group>"; };
 		62100B21171551AF0091046D /* TAUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAUtil.m; sourceTree = "<group>"; };
+		62100B231715821E0091046D /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		62100B271715833D0091046D /* CDStructures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDStructures.h; sourceTree = "<group>"; };
+		62100B281715833D0091046D /* CTEmailAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTEmailAddress.h; sourceTree = "<group>"; };
+		62100B291715833D0091046D /* CTMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTMessage.h; sourceTree = "<group>"; };
+		62100B2A1715833D0091046D /* CTMessageAddress-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CTMessageAddress-Protocol.h"; sourceTree = "<group>"; };
+		62100B2B1715833D0091046D /* CTMessageCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTMessageCenter.h; sourceTree = "<group>"; };
+		62100B2C1715833D0091046D /* CTMessagePart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTMessagePart.h; sourceTree = "<group>"; };
+		62100B2D1715833D0091046D /* CTMessageStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTMessageStatus.h; sourceTree = "<group>"; };
+		62100B2E1715833D0091046D /* CTMmsEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTMmsEncoder.h; sourceTree = "<group>"; };
+		62100B2F1715833D0091046D /* CTPhoneNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTPhoneNumber.h; sourceTree = "<group>"; };
+		62100B301715833D0091046D /* NSCopying-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCopying-Protocol.h"; sourceTree = "<group>"; };
+		62100B3A17159FDE0091046D /* FMDatabase+InMemoryOnDiskIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FMDatabase+InMemoryOnDiskIO.h"; sourceTree = "<group>"; };
+		62100B3B17159FDE0091046D /* FMDatabase+InMemoryOnDiskIO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FMDatabase+InMemoryOnDiskIO.m"; sourceTree = "<group>"; };
+		62100B3C17159FDE0091046D /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		62100B3D17159FDE0091046D /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		62100B3E17159FDE0091046D /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		62100B3F17159FDE0091046D /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		62100B4017159FDE0091046D /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		62100B4117159FDE0091046D /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		62100B4217159FDE0091046D /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		62100B4317159FDE0091046D /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		62100B4417159FDE0091046D /* fmdb.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fmdb.m; sourceTree = "<group>"; };
+		62100B4517159FDE0091046D /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		62100B4617159FDE0091046D /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		62100B4E1715A0AD0091046D /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		62100B501715A4B20091046D /* TACallHistoryManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TACallHistoryManager.h; sourceTree = "<group>"; };
+		62100B511715A4B20091046D /* TACallHistoryManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TACallHistoryManager.m; sourceTree = "<group>"; };
+		62100B531715A91F0091046D /* TACallHistoryVo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TACallHistoryVo.h; sourceTree = "<group>"; };
+		62100B541715A91F0091046D /* TACallHistoryVo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TACallHistoryVo.m; sourceTree = "<group>"; };
 		6213609317144F7F00F5E476 /* TAHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAHomeViewController.h; sourceTree = "<group>"; };
 		6213609417144F7F00F5E476 /* TAHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAHomeViewController.m; sourceTree = "<group>"; };
 		6213609C1714565C00F5E476 /* TATrueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TATrueViewController.h; sourceTree = "<group>"; };
@@ -73,6 +113,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62100B4F1715A0AD0091046D /* libsqlite3.dylib in Frameworks */,
+				62100B241715821E0091046D /* CoreTelephony.framework in Frameworks */,
 				621360B61714618D00F5E476 /* AddressBookUI.framework in Frameworks */,
 				621360B31714618600F5E476 /* AddressBook.framework in Frameworks */,
 				6288C3FF1713D18200B5C243 /* UIKit.framework in Frameworks */,
@@ -89,6 +131,8 @@
 			children = (
 				62100B171715249E0091046D /* TAAddressBookVo.h */,
 				62100B181715249E0091046D /* TAAddressBookVo.m */,
+				62100B531715A91F0091046D /* TACallHistoryVo.h */,
+				62100B541715A91F0091046D /* TACallHistoryVo.m */,
 			);
 			name = models;
 			sourceTree = "<group>";
@@ -111,6 +155,52 @@
 			name = util;
 			sourceTree = "<group>";
 		};
+		62100B25171582C70091046D /* thirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				62100B3917159FDE0091046D /* FMDB */,
+				62100B261715833D0091046D /* CTMessage */,
+			);
+			name = thirdParty;
+			sourceTree = "<group>";
+		};
+		62100B261715833D0091046D /* CTMessage */ = {
+			isa = PBXGroup;
+			children = (
+				62100B271715833D0091046D /* CDStructures.h */,
+				62100B281715833D0091046D /* CTEmailAddress.h */,
+				62100B291715833D0091046D /* CTMessage.h */,
+				62100B2A1715833D0091046D /* CTMessageAddress-Protocol.h */,
+				62100B2B1715833D0091046D /* CTMessageCenter.h */,
+				62100B2C1715833D0091046D /* CTMessagePart.h */,
+				62100B2D1715833D0091046D /* CTMessageStatus.h */,
+				62100B2E1715833D0091046D /* CTMmsEncoder.h */,
+				62100B2F1715833D0091046D /* CTPhoneNumber.h */,
+				62100B301715833D0091046D /* NSCopying-Protocol.h */,
+			);
+			path = CTMessage;
+			sourceTree = "<group>";
+		};
+		62100B3917159FDE0091046D /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				62100B3A17159FDE0091046D /* FMDatabase+InMemoryOnDiskIO.h */,
+				62100B3B17159FDE0091046D /* FMDatabase+InMemoryOnDiskIO.m */,
+				62100B3C17159FDE0091046D /* FMDatabase.h */,
+				62100B3D17159FDE0091046D /* FMDatabase.m */,
+				62100B3E17159FDE0091046D /* FMDatabaseAdditions.h */,
+				62100B3F17159FDE0091046D /* FMDatabaseAdditions.m */,
+				62100B4017159FDE0091046D /* FMDatabasePool.h */,
+				62100B4117159FDE0091046D /* FMDatabasePool.m */,
+				62100B4217159FDE0091046D /* FMDatabaseQueue.h */,
+				62100B4317159FDE0091046D /* FMDatabaseQueue.m */,
+				62100B4417159FDE0091046D /* fmdb.m */,
+				62100B4517159FDE0091046D /* FMResultSet.h */,
+				62100B4617159FDE0091046D /* FMResultSet.m */,
+			);
+			path = FMDB;
+			sourceTree = "<group>";
+		};
 		6213609117144F6300F5E476 /* ui */ = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +221,8 @@
 			children = (
 				62100B0E171523C90091046D /* TAAddressBookManager.h */,
 				62100B0F171523C90091046D /* TAAddressBookManager.m */,
+				62100B501715A4B20091046D /* TACallHistoryManager.h */,
+				62100B511715A4B20091046D /* TACallHistoryManager.m */,
 			);
 			name = core;
 			sourceTree = "<group>";
@@ -155,6 +247,8 @@
 		6288C3FD1713D18200B5C243 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				62100B4E1715A0AD0091046D /* libsqlite3.dylib */,
+				62100B231715821E0091046D /* CoreTelephony.framework */,
 				621360B51714618D00F5E476 /* AddressBookUI.framework */,
 				621360B21714618600F5E476 /* AddressBook.framework */,
 				6288C3FE1713D18200B5C243 /* UIKit.framework */,
@@ -167,6 +261,7 @@
 		6288C4041713D18200B5C243 /* True-adventure */ = {
 			isa = PBXGroup;
 			children = (
+				62100B25171582C70091046D /* thirdParty */,
 				62100B1F171551990091046D /* util */,
 				62100B1A17152F9F0091046D /* expands */,
 				62100B16171524640091046D /* models */,
@@ -275,6 +370,15 @@
 				62100B191715249E0091046D /* TAAddressBookVo.m in Sources */,
 				62100B1E1715301F0091046D /* NSString+TAUtilities.m in Sources */,
 				62100B22171551AF0091046D /* TAUtil.m in Sources */,
+				62100B4717159FDE0091046D /* FMDatabase+InMemoryOnDiskIO.m in Sources */,
+				62100B4817159FDE0091046D /* FMDatabase.m in Sources */,
+				62100B4917159FDE0091046D /* FMDatabaseAdditions.m in Sources */,
+				62100B4A17159FDE0091046D /* FMDatabasePool.m in Sources */,
+				62100B4B17159FDE0091046D /* FMDatabaseQueue.m in Sources */,
+				62100B4C17159FDE0091046D /* fmdb.m in Sources */,
+				62100B4D17159FDE0091046D /* FMResultSet.m in Sources */,
+				62100B521715A4B20091046D /* TACallHistoryManager.m in Sources */,
+				62100B551715A91F0091046D /* TACallHistoryVo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,6 +11,14 @@
 #import "TAAddressBookManager.h"
 #import "TAAddressBookVo.h"
 #import "TAUtil.h"
+#import "TACallHistoryManager.h"
+#import "TACallHistoryVo.h"
+
+#import "CTMessage/CDStructures.h"
+#import "CTMessage/CTMessageCenter.h"
+#import "CTMessage/CTMessagePart.h"
+#import "CTMessage/CTMessageAddress-Protocol.h"
+#import "CTMessage/CTMessage.h"
 
 @interface TAAdventureViewController ()
 
@@ -19,6 +27,7 @@
 @implementation TAAdventureViewController
 
 @synthesize addressBookManager = _addressBookManager;
+@synthesize callHistoryManager = _callHistoryManager;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -26,6 +35,7 @@
     if (self) {
         // Custom initialization
         _addressBookManager = [TAAddressBookManager shareInstance];
+        _callHistoryManager = [TACallHistoryManager shareInstance];
     }
     return self;
 }
@@ -51,11 +61,23 @@
     NSString *phoneStr = [self getAvaliablePhoneNumberFromContancts:allContancts];
     if (phoneStr.length == 0) return;
     
-    if (btnTag == 1) {  //随机拨打电话
+    if (btnTag == 1) {  //通讯录中拨打电话
         NSString *phoneUrl = [NSString stringWithFormat:@"tel:%@", phoneStr];
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:phoneUrl]];
-    }else if (btnTag == 2) {    //随机发送短信
-        NSLog(@"2");
+    }else if (btnTag == 2) {    //通讯录中发送短信
+        NSLog(@"随机发送短信");
+        [[CTMessageCenter sharedMessageCenter] sendSMSWithText:@"message text body" serviceCenter:nil toAddress:phoneStr];
+    }else if (btnTag == 3) {    //通话记录中拨打电话
+        NSArray *allCallHistorys = [self.callHistoryManager getAllCalls];
+        NSUInteger callCount = [allCallHistorys count];
+        if (callCount == 0) return;
+        
+        NSUInteger index = [TAUtil getRandomNumberFrom:0 To:callCount];
+        
+        TACallHistoryVo *vo = [allCallHistorys objectAtIndex:index];
+        NSString *phoneString = vo.address;
+        NSString *phoneUrl = [NSString stringWithFormat:@"tel:%@", phoneString];
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:phoneUrl]];
     }
 }
 

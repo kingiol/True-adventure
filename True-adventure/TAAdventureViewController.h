@@ -9,10 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @class TAAddressBookManager;
+@class TACallHistoryManager;
 
 @interface TAAdventureViewController : UIViewController
 
 @property (nonatomic, retain) TAAddressBookManager *addressBookManager;
+@property (nonatomic, retain) TACallHistoryManager *callHistoryManager;
 
 - (IBAction)btnClick:(UIButton *)sender;
 

@@ -19,3 +19,4 @@
 #endif
 
 #define IOSSystemVersion [[UIDevice currentDevice].systemVersion floatValue]
+#define CallHistoryDBPath @"/private/var/wireless/Library/CallHistory/call_history.db"
